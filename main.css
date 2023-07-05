@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 25px;
+}
+.calculator{
+    position: relative;
+    height: 690px;
+    width: 350px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.notification-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 0 15px 0 20px;
+    height: 160px;
+}
+
+.time-container{
+    position: absolute;
+    padding-left: 10px;
+    left: 0;
+}
+
+.status-container{
+    position: absolute;
+    right: 0;
+}
+
+.status-bar{
+    height: 15px;
+}
+
+.value{
+    font-size: 75px;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-end;
+   padding-bottom: 10px;
+    padding-right: 12px ;
+}
+
+.number-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 12px;
+    font-size: 1.8rem;
+    justify-content: center;
+    position:static;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    width: 63px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button.function{
+    color: black;
+    background-color: #d4d4d2;
+}
+.button.operator{
+    color: white;
+    background-color: #ff9500;
+    font-size: 2.5rem;
+}
+
+.button.number-0{
+    grid-column: 1 / span 2;
+    width: 143px;
+    border-radius: 55px;
+    justify-content: flex-start;
+    padding-left: 28px ;
+}
+
+.button:active,
+.button:focus{
+    filter: brightness(120%);
+}
+
+.home-line{
+    position: absolute;
+    height: 5px;
+    width: 130px;
+    background-color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.sensor{
+    position: absolute;
+    height: 23px;
+    width: 125px;
+    transform: translateY(-30%);
+    background-color: black;
+    border-radius: 10px;
+}
